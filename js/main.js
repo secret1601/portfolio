@@ -1,4 +1,12 @@
+
+
+
 (function($) {
+
+  // port-info
+  let port_info = $('.port-info');
+  let portfolio_item = $('.portfolio-item');
+
   
   "use strict";
 
@@ -10,7 +18,6 @@
             $('.scrolling-navbar').removeClass('top-nav-collapse');
         }
     });
-
     /* 
    One Page Navigation & wow js
    ========================================================================== */

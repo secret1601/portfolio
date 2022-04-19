@@ -31,12 +31,19 @@
   15. FOOTER SECTION
     -15.1 COMING SOON PAGE
   ------------------------------------- */
+@charset "utf-8";
+@font-face {
+    font-family: tway sky;
+    src: url('./tway_sky.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /* ==========================================================================
-   1. IMPORT GOOGLE FONTS
+  1. IMPORT GOOGLE FONTS
    ========================================================================== */
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700");
 /* ==========================================================================
-   2. GENERAL
+  2. GENERAL
    ========================================================================== */
 body {
   font-family: 'Poppins', sans-serif;
@@ -57,7 +64,7 @@ p {
 }
 
 a:hover, a:focus {
-  color: #61D2B4;
+  /* color: #61D2B4; */
 }
 
 a {
@@ -98,7 +105,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 }
 
 /* ==========================================================================
-   2.1 Section Title
+  2.1 Section Title
    ========================================================================== */
 .section {
   padding: 80px 0;
@@ -442,18 +449,66 @@ button:focus {
 }
 
 #hero-area .contents .btn {
-  margin: 25px 25px 0px 0px;
+  margin: 25px 0px 0px 0px;
   text-transform: uppercase;
+  transition: all 0.6s;
+}
+#hero-area .contents .btn:hover {
+  color: #fff !important;
+  background-color: rgb(161, 92, 46);
+  border: 1px solid rgb(161, 92, 46);
 }
 #hero-area .contents .btn i {
   font-size: 20px;
   margin-left: 10px;
   vertical-align: middle;
 }
+
 .f-b {
   color: #000 !important;
   font-weight: bold !important;
 }
+/* ================================================= */
+/* sns-box */
+.sns-box {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+.sns-box li {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  padding-top: 20px;
+  margin: 0 20px;
+}
+.sns-box li:nth-child(1) a {
+  color: #ce615a !important;
+}
+.sns-box li:nth-child(2) a {
+  color: #3097c7;
+}
+.sns-box li:nth-child(3) a {
+  color: #e2cc05;
+}
+.sns-box li:nth-child(4) a {
+  color: #81dd9c;
+}
+.sns-box li a {
+  /* color: #000 !important; */
+}
+.sns-box li:hover a{
+  color: #fff !important;
+}
+
+@media all and (max-width: 991px) {
+  .sns-box li {
+    font-size: 35px;
+  }
+}
+/* ================================================= */
+
+
 
 #hero-area .banner_bottom_btn {
   margin-top: 40px;
@@ -473,7 +528,7 @@ button:focus {
 }
 
 /* ==========================================================================
-   4. Navbar Style
+  4. Navbar Style
    ========================================================================== */
 .navbar-brand {
   position: relative;
@@ -641,6 +696,7 @@ button:focus {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 10px;
+  color: #62d291;
 }
 
 .item-boxes p {
@@ -752,7 +808,7 @@ button:focus {
   7. Video promo Style
    ========================================================================== */
 .video-promo {
-  background: #61D2B4;
+  background: #333;
   color: #fff;
   overflow: hidden;
   position: relative;
@@ -764,13 +820,23 @@ button:focus {
 
 .video-promo .video-promo-content h2 {
   color: #fff;
-  font-size: 30px;
+  font-size: 40px;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+}
+
+/* 비디오 호버 */
+.video-popup:hover {
+  color:#33b391 !important;
+  border: 3px solid #33b391 !important;
 }
 
 .video-promo .video-promo-content p {
   margin-bottom: 30px;
+  color: #62d291;
+  font-size: 17px;
+  line-height: 30px;
+  font-family: tway sky;
 }
 
 .video-promo .video-promo-content .video-popup {
@@ -851,13 +917,12 @@ button:focus {
   position: relative;
   margin-right: 15px;
   border-radius: 4px;
-  /* background-color: rgba(0, 0, 0, 0.5); */
-  z-index: 999;
 }
 
 .shot-item img {
   width: 100%;
   border-radius: 30px !important;
+  opacity: 0.9;
 }
 
 /* .shot-item .overlay {
@@ -876,7 +941,7 @@ button:focus {
   opacity: 1;
 } */
 
-.portfolio-info {
+/* .portfolio-info {
   position: absolute;
   left: 50%;
   bottom: 10px;
@@ -894,14 +959,87 @@ button:focus {
   color: #000;
   font-weight :bold;
   margin: 0 10px;
+} */
+
+/* port-info*/
+.port-info {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: block;
+  width: 250px;
+  height: 140px;
+  background: linear-gradient(45deg, rgba(238, 130, 238, 0.986), rgba(255, 166, 0, 0.959));
+  border-radius: 30px;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+
+  /* z-index: 999; */
 }
+.port-info-title {
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 15px;
+  /* background-color: #33b39100; */
+}
+.port-info-title span {
+  position: relative;
+  display: block;
+  color: rgba(0, 0, 0, 0.795);
+  font-weight: bold;
+  font-family: tway sky;
+}
+.port-info-list {
+  position: absolute;
+  left: 57%;
+  bottom: 15px;
+  transform: translateX(-50%);
+  display: block;
+  width: 100%;
+}
+.port-info-list li {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(240, 218, 218);
+  border-radius: 50%;
+  margin: 0 6px;
+  transform: scale(1.0);
+  float: left;
+  transition: all 0.4s;
+}
+
+
+.port-info-list li a {
+  position: relative;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  line-height: 60px;
+  color: #d35b4b;
+}
+
+.port-info-list li:hover a{
+  color:  #33b391;
+}
+.port-info-list li:hover {
+  transform: scale(1.1);
+}
+
+
+
 .bg-blue {
   background-color: steelblue !important;
 }
 .bg-burly {
   background-color: #d2ab67 !important;
 }
-
+/* 
 .overlay .item-icon {
   height: 48px;
   width: 48px;
@@ -933,7 +1071,7 @@ button:focus {
 .shot-item:hover .item-icon {
   visibility: visible;
   opacity: 1;
-}
+} */
 
 /* ==========================================================================
 	9. Pricing Table
@@ -988,7 +1126,7 @@ button:focus {
 }
 
 /* ==========================================================================
- 10. Counter Section Style
+  10. Counter Section Style
  ========================================================================== */
 .counters {
   background: url(../img/counter.jpg) fixed;
@@ -997,6 +1135,7 @@ button:focus {
 
 .counters .facts-item {
   text-align: center;
+  margin-bottom: 35px;
   color: #fff;
 }
 
@@ -1006,7 +1145,6 @@ button:focus {
 
 .counters .facts-item .icon i {
   font-size: 50px;
-  color: #fff;
 }
 
 .counters .facts-item .fact-count h3 {
@@ -1018,7 +1156,9 @@ button:focus {
 .counters .facts-item .fact-count h4 {
   font-size: 20px;
   font-weight: 400;
-  color: #fff;
+  display: inline-block;
+  color: #000;
+  font-weight: bold;
 }
 
 /* ==========================================================================
