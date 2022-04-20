@@ -19,7 +19,7 @@
         }
     });
     /* 
-   One Page Navigation & wow js
+  One Page Navigation & wow js
    ========================================================================== */
     //Initiat WOW JS
     new WOW().init();
@@ -30,7 +30,7 @@
     }); 
 
     $(window).on('load', function() {
-       
+
         $('body').scrollspy({
             target: '.navbar-collapse',
             offset: 195

@@ -38,6 +38,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+  font-family: 'YUniverse-B';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_yuniverse@1.0/YUniverse-B.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 /* ==========================================================================
   1. IMPORT GOOGLE FONTS
    ========================================================================== */
@@ -46,7 +52,7 @@
   2. GENERAL
    ========================================================================== */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'YUniverse-B', 'Poppins', sans-serif;
   color: #333;
   font-size: 14px;
   font-weight: 400;
@@ -75,7 +81,7 @@ a {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'YUniverse-B','Poppins', sans-serif;
   font-size: 40px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -411,8 +417,9 @@ button:focus {
   3. Hero Area
    ========================================================================== */
 #hero-area {
-  background: url(../img/hero-area.jpg) fixed no-repeat;
+  background: url('../img/hero-area.jpg') fixed no-repeat;
   background-size: cover;
+  /* background-position: 0px 0px !important; */
   color: #fff;
   overflow: hidden;
   position: relative;
@@ -433,17 +440,18 @@ button:focus {
 }
 
 #hero-area .contents h1 {
-  color: #fff;
+  /* color:#f39c12; */
+  color: rgb(237, 254, 241);
   font-size: 42px;
   font-weight: 700;
   margin-bottom: 25px;
 }
 
 #hero-area .contents p {
-  font-size: 17px;
-  color: #fff;
+  font-size: 20px;
+  color: #ffffff;
   /* font-weight: bold;*/
-  font-weight: 300;
+  font-weight: bold;
   line-height: 30px;
   letter-spacing: 0.5px;
 }
@@ -533,6 +541,13 @@ button:focus {
 .navbar-brand {
   position: relative;
   padding: 0px;
+  width: 200px;
+  height: 80px;
+}
+/* 이미지 사이즈 */
+.navbar-brand img {
+  width: 40px;
+  margin-top: 20px;
 }
 
 .top-nav-collapse {
@@ -700,7 +715,7 @@ button:focus {
 }
 
 .item-boxes p {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .item-boxes:hover .icon {
