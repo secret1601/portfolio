@@ -3,9 +3,19 @@
 
 (function($) {
 
-  // port-info
-  let port_info = $('.port-info');
-  let portfolio_item = $('.portfolio-item');
+  // 폰 박스
+  let phone_open = $('.phone-open');
+  let phone_box_wrap = $('.phone-box-wrap');
+  let phone_close = $('.phone-close');
+
+  phone_open.click(function(e){
+    e.preventDefault();
+    phone_box_wrap.stop().fadeIn(700);
+  });
+  phone_close.click(function(){
+    phone_box_wrap.stop().fadeOut(700);
+  });
+
 
   
   "use strict";

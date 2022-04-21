@@ -22,10 +22,29 @@
     <link rel="stylesheet" href="css/main.css">    
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
   </head>
   <body>
+
+    <!-- 폰 박스 -->
+    <div class="phone-box-wrap">
+      <div class="phone-box">
+        <h4>contact me</h4>
+        <p>
+          궁금한 것이 있으시면<br>
+          언제든지 연락주세요 :)
+        </p>
+        <span>
+          Name : LEE HUI-JUN <br>
+          PH : 010-5759-1690 <br>
+          Github : https://github.com/secret1601 <br>
+          E-mail : secret1601@naver.com
+        </span>
+        <button class="phone-close"> CLOSE </button>
+      </div>
+    </div>
 
     <!-- Header Section Start -->
     <header id="hero-area" data-stellar-background-ratio="0.5">    
@@ -133,7 +152,7 @@
                 </li>
 
                 <li class="profile">
-                  <a href="#">
+                  <a href="#" class="phone-open">
                     <i class="bi bi-person-lines-fill"></i>
                   </a>
                 </li>
@@ -910,7 +929,7 @@
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">
             <!-- Blog Item Starts -->
-            <div class="blog-item-wrapper">
+            <div style="padding-top: 15px;" class="blog-item-wrapper">
               <div class="blog-item-img">
                 <a href="single-post.html">
                   <img src="images/life-1.png" alt="life-1">
@@ -933,7 +952,7 @@
                   기억은 시간이 지나면 잊혀지지만, 사진은 언제든 꺼내어 그때를 추억할 수 있어요. 20살 때 부터 이런 사진의 매력에 빠져
                   지금까지도 예쁜 사진을 찍어 간직하는 것이 제가 사랑하는 취미 중 하나입니다.
                 </p>
-                <a href="single-post.html" class="btn-rm">Read More <i class="lnr lnr-arrow-right"></i></a>
+                <a href="single-post.html" class="btn-rm"><i class="fas fa-camera"></i></a>
               </div>
             </div>
             <!-- Blog Item Wrapper Ends-->
@@ -941,11 +960,11 @@
 
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">
             <!-- Blog Item Starts -->
-            <div class="blog-item-wrapper">
+            <div style="padding-top: 14px;" class="blog-item-wrapper">
               <div class="blog-item-img">
                 
                   <!-- <img src="img/blog/img2.jpg" alt=""> -->
-                  <video style="width: 322px; height: 201px;" controls loop>
+                  <video controls loop>
                     <source src="images/video02.mp4" type="video/mp4">
                   </video>       
               </div>
@@ -959,10 +978,10 @@
                 </h3>
                 <p>
                   여행은 늘 새롭고 저를 설레게 해요. 한 달에 2번 정도는 꾸준히 여행을 다니며
-                  일상을 리프레쉬하며 행복을 느낍니다. 특히 저는 혼자 여행하는 것을 좋아해요. 
+                  일상을 리프레쉬하고 행복을 느낍니다. 특히 저는 혼자 여행하는 것을 좋아해요. 
                   여유를 느끼며, 새로운 곳을 보고 걷는 게 참 좋아요.  
                 </p>
-                <a href="single-post.html" class="btn-rm">Read More <i class="lnr lnr-arrow-right"></i></a>
+                <a href="single-post.html" class="btn-rm"><i class="fas fa-plane-departure"></i></a>
               </div>
             </div>
             <!-- Blog Item Wrapper Ends-->
@@ -984,12 +1003,16 @@
                   <span class="comments"></span>
                 </div> 
                 <h3>
-                  <a href="single-post.html">Social media at work</a>
+                  <a href="single-post.html">Team play & communication</a>
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... 
+                  팀원과 어울리며 커뮤니케이션을 통해 경기를 풀어나가는 것에 매력을 느껴, 
+                  고등학생 때 부터 시작하게 된 스포츠 운동이에요. 
+                  팀과 호흡을 잘 맞춰 좋은 결과를 이끌어 내면, 희열을 느끼곤해요.
+                  이러한 저의 성향이 협업이 필요한 실무에서도 좋은 장점으로 나타날 수 있다고 생각합니다. 
+
                 </p>
-                <a href="single-post.html" class="btn-rm">Read More <i class="lnr lnr-arrow-right"></i></a>
+                <a href="single-post.html" class="btn-rm"><i class="fas fa-basketball-ball"></i></a>
               </div>
             </div>
             <!-- Blog Item Wrapper Ends-->
@@ -1065,25 +1088,10 @@
       <div class="container">
         <div class="row">
           <!-- Footer Links -->
-          <div class="col-lg-6 col-sm-6 col-xs-12">
-            <ul class="footer-links">
-              <li>
-                <a href="#">Homepage</a>
-              </li>
-              <li>
-                <a href="#">Services</a>
-              </li>
-              <li>
-                <a href="#">About Us</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
+          
           <div class="col-lg-6 col-sm-6 col-xs-12">
             <div class="copyright">
-              <p>All copyrights reserved &copy; 2018 - Designed & Developed by <a rel="nofollow" href="https://uideck.com">UIdeck</a></p>
+              <p>All copyrights reserved &copy; 2022 - Designed & Developed by LeeHuiJun</a></p>
             </div>
           </div>  
         </div>

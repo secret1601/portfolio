@@ -116,6 +116,79 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   color: #61D2B4;
 }
 
+/* 폰 박스 */
+.phone-box-wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+.phone-box {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 300px;
+  height: 280px;
+  background: conic-gradient(from 45deg, #ffd301, #fffca6);
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border: 5px solid #000;
+}
+.phone-box p {
+  position: relative;
+  display: block;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+  font-family: 'YUniverse-B';
+}
+
+.phone-box h4 {
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.phone-box span {
+  position: relative;
+  display: block;
+  padding-left: 20px;
+  background: conic-gradient(from 135deg, #f57812, #f89849);
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  font-weight: bold;
+}
+
+.dot {
+  position: relative;
+  display: block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #33b391;
+}
+.phone-close {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  transform: translateX(-50%);
+  display: block;
+  border: 3px solid #000;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: conic-gradient(from 45deg, #fffca6, #ffd301);
+  transition: all 0.4s;
+}
+.phone-close:hover {
+  background: conic-gradient(from 135deg, #fff, #867103);
+  border: 7px solid #000;
+}
+
 /* ==========================================================================
   2.1 Section Title
    ========================================================================== */
@@ -622,6 +695,26 @@ button:focus {
   margin-top: 20px;
 }
 
+@media all and (max-width: 1199px) {
+  .navbar-brand img {
+    width: 37px;
+    margin-top: 0px;
+  }
+}
+@media all and (max-width: 768px) {
+  .navbar-brand img {
+    width: 19% !important;
+    margin-top: 0px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .navbar-brand img {
+    width: 19% !important;
+    margin-top: 7px;
+  }
+}
+
 .top-nav-collapse {
   background: #fff;
   z-index: 999999;
@@ -964,6 +1057,8 @@ button:focus {
 
 #portfolios .portfolio-item .shot-item {
   margin: 0px;
+  border-radius: 30px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 #portfolio .mix {
@@ -1409,6 +1504,34 @@ button:focus {
 #blog .blog-item-img img {
   width: 100%;
 }
+#blog .blog-item-img video {
+  width: 322px;
+  height: 201px;
+}
+@media all and (max-width:1200px) {
+  #blog .blog-item-img video {
+    width: 260px;
+    height: 161px;
+  }
+}
+@media all and (max-width:991px) {
+  #blog .blog-item-img video {
+    width: 180px;
+    height: 111px;
+  }
+}
+@media all and (max-width:767px) {
+  #blog .blog-item-img video {
+    width: 210px;
+    height: 130px;
+  }
+}
+@media all and (max-width:575px) {
+  #blog .blog-item-img video {
+    width: 423px;
+    height: 263px;
+  }
+}
 
 #blog .blog-item-text {
   padding: 20px 0;
@@ -1544,7 +1667,7 @@ footer {
 
 .copyright {
   margin-top: 10px;
-  float: right;
+  float: left;
 }
 
 .copyright p {
