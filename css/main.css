@@ -44,6 +44,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'LAB디지털';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 /* ==========================================================================
   1. IMPORT GOOGLE FONTS
    ========================================================================== */
@@ -139,9 +145,72 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 .section-header .section-subtitle {
   margin-top: 15px;
   color: #333;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 23px;
+  font-weight: bold;
+  z-index: 9 !important;
+  background-color: #ffe958;
+  display: inline-block;
 }
+
+/* yellow-bar  */
+/* .life-yellow-bar {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 4742px;
+  transform: translateX(-50%);
+  display: block;
+  width: 400px;
+  height: 26px;
+  background-color: #ffe958;
+  z-index: -1 !important;
+}
+
+.about-yellow-bar {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 797px;
+  transform: translateX(-50%);
+  display: block;
+  width: 213px;
+  height: 25px;
+  background-color: #ffe958;
+  z-index: -1 !important;
+} */
+
+/* @media all and (max-width: 1199px) {
+  .life-yellow-bar {
+    top: 4705px !important;
+  }
+}
+
+@media all and (max-width: 990px) {
+  .about-yellow-bar {
+    top: 772px !important;
+  }
+  .life-yellow-bar {
+    top: 4405px !important
+  }
+}
+
+@media all and (max-width: 766px) {
+  .about-yellow-bar {
+    top: 594px !important;
+  }
+
+  .life-yellow-bar {
+    top: 5635px !important
+  }
+}
+
+@media all and (max-width: 575px) {
+  .life-yellow-bar {
+    top: 10735px !important
+  }
+} */
+
+
 
 .section-header .lines {
   margin: auto;
@@ -490,24 +559,27 @@ button:focus {
   padding-top: 20px;
   margin: 0 20px;
 }
-.sns-box li:nth-child(1) a {
+
+.sns-box li a{
+  color: #fff ;
+}
+
+.sns-box li:nth-child(1):hover a {
   color: #ce615a !important;
 }
-.sns-box li:nth-child(2) a {
+.sns-box li:nth-child(2):hover a {
   color: #3097c7;
 }
-.sns-box li:nth-child(3) a {
+.sns-box li:nth-child(3):hover a {
   color: #e2cc05;
 }
-.sns-box li:nth-child(4) a {
+.sns-box li:nth-child(4):hover a {
   color: #81dd9c;
 }
 .sns-box li a {
   /* color: #000 !important; */
 }
-.sns-box li:hover a{
-  color: #fff !important;
-}
+
 
 @media all and (max-width: 991px) {
   .sns-box li {
@@ -1204,12 +1276,12 @@ button:focus {
 }
 
 .testimonial-item .testimonial-text span {
-  font-size: 14px;
+  font-size: 25px;
   color: #999;
 }
 
 .testimonial-item .testimonial-text p {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
   padding: 36px 10px 30px 10px;
   margin: 0;
@@ -1320,6 +1392,8 @@ button:focus {
   -webkit-transition: transform 0.2s linear, -webkit-box-shadow 0.2s linear;
   -moz-transition: transform 0.2s linear, -moz-box-shadow 0.2s linear;
   transition: transform 0.2s linear, box-shadow 0.2s linear;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  padding: 0 15px;
 }
 
 #blog .blog-item-wrapper:hover .blog-item-img:before {
@@ -1349,6 +1423,8 @@ button:focus {
 
 #blog .blog-item-text h3 a {
   color: #333;
+  font-family: tway sky;
+  font-weight: bold;
 }
 
 #blog .blog-item-text h3 a:hover {
@@ -1358,6 +1434,8 @@ button:focus {
 #blog .blog-item-text p {
   line-height: 25px;
   margin-bottom: 20px;
+  font-size: 17px;
+  font-family: 'LAB디지털';
 }
 
 .meta-tags {
@@ -1367,6 +1445,7 @@ button:focus {
 .meta-tags span {
   color: #999;
   margin-right: 10px;
+  font-size: 18px;
 }
 
 .meta-tags span i {
