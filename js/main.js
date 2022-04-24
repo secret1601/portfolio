@@ -3,6 +3,15 @@
 
 (function($) {
 
+  // 포트폴리오 메뉴
+  $(window).on('scroll', function() {
+    if ($(window).scrollTop() > 400) {
+        $('.port-side-wrap').fadeIn();
+    } else {
+        $('.port-side-wrap').fadeOut();
+    }
+  });
+
   // 폰 박스
   let phone_open = $('.phone-open');
   let phone_box_wrap = $('.phone-box-wrap');
@@ -22,7 +31,7 @@
 
   // Sticky Nav
     $(window).on('scroll', function() {
-        if ($(window).scrollTop() > 200) {
+        if ($(window).scrollTop() > 400) {
             $('.scrolling-navbar').addClass('top-nav-collapse');
         } else {
             $('.scrolling-navbar').removeClass('top-nav-collapse');
@@ -47,7 +56,7 @@
         });
 
         $(window).on('scroll', function() {
-            if ($(window).scrollTop() > 200) {
+            if ($(window).scrollTop() > 400) {
                 $('.fixed-top').addClass('menu-bg');
             } else {
                 $('.fixed-top').removeClass('menu-bg');
@@ -142,13 +151,13 @@
 /* 
    Back Top Link
    ========================================================================== */
-    var offset = 200;
+    var offset = 400;
     var duration = 500;
     $(window).scroll(function() {
       if ($(this).scrollTop() > offset) {
-        $('.back-to-top').fadeIn(400);
+        $('.back-to-top').fadeIn();
       } else {
-        $('.back-to-top').fadeOut(400);
+        $('.back-to-top').fadeOut();
       }
     });
 

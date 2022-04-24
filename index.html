@@ -25,8 +25,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
+    <!-- Mitr 글꼴 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Song Myeong -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    
   </head>
   <body>
+
+    <!-- 포트폴리오 메뉴 -->
+    <div class="port-side-wrap">
+      <div class="port-side">
+        <a href="#">
+          portfolio PDF <i class="bi bi-cloud-arrow-down"></i>
+        </a>
+      </div>
+    </div>
 
     <!-- 폰 박스 -->
     <div class="phone-box-wrap">
@@ -39,7 +59,7 @@
         <span>
           Name : LEE HUI-JUN <br>
           PH : 010-5759-1690 <br>
-          Github : https://github.com/secret1601 <br>
+          Github : https://github.com/secret1601  <br>
           E-mail : secret1601@naver.com
         </span>
         <button class="phone-close"> CLOSE </button>
@@ -63,11 +83,16 @@
           <div class="collapse navbar-collapse" id="main-navbar">
             <ul class="navbar-nav mr-auto w-100 justify-content-end">
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#hero-area">Home</a>
+                <a class="nav-link page-scroll" href="#hero-area">HOME</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#services">ABOUT</a>
               </li>
+
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#skill">SKILL</a>
+              </li>
+
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#features">POSSIBILITY</a>
               </li>
@@ -75,7 +100,7 @@
                 <a class="nav-link page-scroll" href="#portfolios">PORTFOLIO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#selfintro">INTERVIEW & SKILL</a>
+                <a class="nav-link page-scroll" href="#selfintro">INTERVIEW</a>
               </li>
               <!-- <li class="nav-item">
                 <a class="nav-link page-scroll" href="#team">LIFE</a>
@@ -84,7 +109,7 @@
                 <a class="nav-link page-scroll" href="#blog">LIFE</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+                <a class="nav-link page-scroll" href="#testimonial">VISION</a>
               </li>
             </ul>
           </div>
@@ -93,10 +118,10 @@
         <!-- Mobile Menu Start -->
         <ul class="mobile-menu">
             <li>
-              <a class="page-scroll" href="#hero-area">ABOUT</a>
+              <a class="page-scroll" href="#hero-area">HOME</a>
             </li>
             <li>
-              <a class="page-scroll" href="#services">POSSIBILITY</a>
+              <a class="page-scroll" href="#skill">ABOUT</a>
             </li>
             <li>
               <a class="page-scroll" href="#features">POSSIBILITY</a>
@@ -105,7 +130,7 @@
               <a class="page-scroll" href="#portfolios">PORTFOLIO</a>
             </li>
             <li>
-              <a class="page-scroll" href="#selfintro">INTERVIEW & SKILL</a>
+              <a class="page-scroll" href="#selfintro">INTERVIEW</a>
             </li>
             <!-- <li>
               <a class="page-scroll" href="#team">LIFE</a>
@@ -114,7 +139,7 @@
               <a class="page-scroll" href="#blog">LIFE</a>
             </li>
             <li>
-              <a class="page-scroll" href="#contact">CONTACT</a>
+              <a class="page-scroll" href="#testimonial">VISION</a>
             </li>
         </ul>
         <!-- Mobile Menu End -->
@@ -162,7 +187,7 @@
               </ul>
 
               <a href="#" class="btn f-b btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
-                PORTFOLIO DOWNLOAD<i class="bi bi-cloud-arrow-down"></i>
+                <!-- PORTFOLIO PDF<i class="bi bi-cloud-arrow-down"></i> -->
               </a>
 
               <span class="home-copy">
@@ -175,14 +200,16 @@
       </div>           
     </header>
     <!-- Header Section End --> 
-
+    
     <!-- Services Section Start -->
     <section id="services" class="section">
       <div class="container">
         <div class="section-header">          
           <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">ABOUT ME</h2>
           <hr class="lines wow zoomIn" data-wow-delay="0.3s">
-          <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Always Find Answer</p>
+          <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">
+            빠른 판단력과 소통으로<br> 그에 상응하는 결과를 도출해낼 수 있습니다.
+          </p>
           <!-- <span class="about-yellow-bar"></span> -->
         </div>
         <div class="row">
@@ -235,12 +262,17 @@
     <!-- Services Section End -->
 
     <!-- Counter Section Start -->
-    <div class="counters section" data-stellar-background-ratio="0.5">
+    <div id="skill" class="counters section" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="section-header">          
-          <h2 style="color: #fff" class="section-title">SKILL</h2>
-          <hr class="lines">
-          <p class="section-subtitle"></p>
+          <h2 class="section-title wow fadeIn c-w"  data-wow-duration="2000ms" data-wow-delay="0.3s">
+            SKILL
+          </h2>
+          <hr class="lines wow fadeIn" data-wow-duration="2000ms" data-wow-delay="0.3s">
+          <p style="color: #fff" class="section-subtitle wow fadeIn c-w" data-wow-duration="2000ms" data-wow-delay="0.3s">
+            최신 웹 트렌드를 쫓아 가기 위해<br>
+            다양한 기술들을 매일 공부하고 있습니다.
+          </p>
         </div>
         <div class="row"> 
           <div class="col-sm-6 col-md-3 col-lg-3">
@@ -344,17 +376,19 @@
     <!-- Features Section Start -->
     <section id="features" class="section" data-stellar-background-ratio="0.2">
       <div class="container">
-        <div class="section-header">          
+        <div class="section-header wow fadeInDown" data-wow-duration="1500ms" data-wow-delay="0.3s">          
           <h2 class="section-title">Possibility</h2>
           <hr class="lines">
-          <p class="section-subtitle"></p>
+          <p class="section-subtitle">
+            간단한 소개 및 저의 마인드를 <br> 그림과 글로 표현해보았습니다 :)
+          </p>
         </div>
         <div class="row">
           <div class="col-lg-8 col-md-12 col-xs-12">
             <div class="container">
               <div class="row">
 
-                  <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
+                  <div class="col-lg-6 col-sm-6 col-xs-12 box-item wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="0.8s">
                     <span class="icon">
                       <i class="lnr lnr-rocket"></i>
                     </span>
@@ -368,7 +402,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
+                  <div class="col-lg-6 col-sm-6 col-xs-12 box-item wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="1.0s">
                     <span class="icon">
                       <i class="lnr lnr-laptop-phone"></i>
                     </span>
@@ -383,7 +417,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
+                  <div class="col-lg-6 col-sm-6 col-xs-12 box-item wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="1.2s">
                     <span class="icon">
                       <i class="lnr lnr-layers"></i>
                     </span>
@@ -396,7 +430,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
+                  <div class="col-lg-6 col-sm-6 col-xs-12 box-item wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="1.4s">
                     <span class="icon">
                       <i class="lnr lnr-cog"></i>
                     </span>
@@ -419,7 +453,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-xs-12">
+          <div class="col-lg-4 col-xs-12 wow fadeInRightBig" wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="1.4s">
             <div class="show-box">
               <img class="img-fulid" src="images/graphy.png" alt="possibility 이미지">
             </div>
@@ -436,7 +470,9 @@
         <div class="section-header">          
           <h2 class="section-title">Portfolio</h2>
           <hr class="lines">
-          <p class="section-subtitle"></p>
+          <p class="section-subtitle">
+            제가 6개월 동안 스터디를 하며<br> 작업한 클론 코딩 및 VUE 프로젝트 입니다.
+          </p>
         </div>
         <div class="row">          
           <div class="col-md-12">
@@ -446,13 +482,13 @@
                 All 
               </a>
               <a class="filter btn btn-common" data-filter=".design">
-                CLONE 
+                STUDY CLONE 
               </a>
               <a class="filter btn btn-common" data-filter=".development">
-                PROJECT
+                PERSONAL CLONE
               </a>
               <a class="filter btn btn-common" data-filter=".print">
-                vue 
+                VUE PROJECT
               </a>
             </div>
             <!-- Portfolio Controller/Buttons Ends-->
@@ -464,18 +500,19 @@
             <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development">
               <div class="portfolio-item">
                 <div class="shot-item">
-                  <img src="images/엽떡.png" alt="동대문엽기떡볶이" />
+                  <img src="images/ddm.png" alt="동대문엽기떡볶이" />
 
                   <div class="port-info">
                     <div class="port-info-title">
                       <span>동대문 엽기 떡볶이</span>
                     </div>
                     <ul class="port-info-list clearfix">
-                      <li><a href="#" target="_blank">HTML</a></li>
-                      <li><a href="https://secret1601.github.io/ddm/" target="_blank">Git</a></li>
+                      <li><a href="https://secret1601.github.io/ddm/" target="_blank">Work</a></li>
+                      <li><a href="https://github.com/secret1601/ddm" target="_blank">Git</a></li>
                       <li><a href="https://www.yupdduk.com/" target="_blank">Origin</a></li>
                     </ul>
                   </div>
+
                 </div>               
               </div>
             </div>
@@ -483,14 +520,14 @@
             <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design">
               <div  class="portfolio-item">
                 <div class="shot-item">
-                  <img src="images/sancheong.jpg" alt="산청군청" />
+                  <img src="images/ccs-sancheong.png" alt="산청군청" />
                   <div class="port-info">
                     <div class="port-info-title">
                       <span>산청군청</span>
                     </div>
                     <ul class="port-info-list clearfix">
-                      <li><a href="#" target="_blank">HTML</a></li>
-                      <li><a href="https://secret1601.github.io/sancheong/" target="_blank">Git</a></li>
+                      <li><a href="https://secret1601.github.io/sancheong/" target="_blank">Work</a></li>
+                      <li><a href="https://github.com/secret1601/sancheong" target="_blank">Git</a></li>
                       <li><a href="https://www.sancheong.go.kr/www/index.do" target="_blank">Origin</a></li>
                     </ul>
                   </div>
@@ -501,14 +538,14 @@
             <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design <!--print-->">
               <div class="portfolio-item">
                 <div class="shot-item">
-                  <img src="images/kila.png" alt="생명보험협회" />
+                  <img src="images/ccs-kila.png" alt="생명보험협회" />
                   <div class="port-info">
                     <div class="port-info-title">
                       <span>생명보험협회</span>
                     </div>
                     <ul class="port-info-list clearfix">
-                      <li><a href="#" target="_blank">HTML</a></li>
-                      <li><a href="https://secret1601.github.io/kila/" target="_blank">Git</a></li>
+                      <li><a href="https://secret1601.github.io/kila/" target="_blank">Work</a></li>
+                      <li><a href="https://github.com/secret1601/kila" target="_blank">Git</a></li>
                       <li><a href="https://www.klia.or.kr/" target="_blank">Origin</a></li>
                     </ul>
                   </div>
@@ -525,8 +562,8 @@
                       <span>베스킨라빈스</span>
                     </div>
                     <ul class="port-info-list clearfix">
-                      <li><a href="#" target="_blank">HTML</a></li>
-                      <li><a href="https://secret1601.github.io/baskinrobbins/" target="_blank">Git</a></li>
+                      <li><a href="https://secret1601.github.io/baskinrobbins/" target="_blank">Work</a></li>
+                      <li><a href="https://github.com/secret1601/baskinrobbins" target="_blank">Git</a></li>
                       <li><a href="http://www.baskinrobbins.co.kr/" target="_blank">Origin</a></li>
                     </ul>
                   </div>
@@ -537,14 +574,14 @@
             <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design ">
               <div  class="portfolio-item">
                 <div class="shot-item">
-                  <img src="images/hansalim.png" alt="한살림장보기" />  
+                  <img src="images/ccs-hansalim.png" alt="한살림장보기" />  
                   <div class="port-info">
                     <div class="port-info-title">
                       <span>한살림장보기</span>
                     </div>
                     <ul class="port-info-list clearfix">
-                      <li><a href="#" target="_blank">HTML</a></li>
-                      <li><a href="https://secret1601.github.io/hansalim/" target="_blank">Git</a></li>
+                      <li><a href="https://secret1601.github.io/hansalim/" target="_blank">Work</a></li>
+                      <li><a href="https://github.com/secret1601/hansalim" target="_blank">Git</a></li>
                       <li><a href="https://shop.hansalim.or.kr/shopping/spMain.do" target="_blank">Origin</a></li>
                     </ul>
                   </div>
@@ -555,18 +592,18 @@
             <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development">
               <div class="portfolio-item">
                 <div class="shot-item">
-                  <img src="images/harim.PNG" alt="하림" />
+                  <img src="images/harim.png" alt="하림" />
+                  <div class="port-info">
+                    <div class="port-info-title">
+                      <span>하림</span>
+                    </div>
+                    <ul class="port-info-list clearfix">
+                      <li><a href="https://secret1601.github.io/harim/" target="_blank">Work</a></li>
+                      <li><a href="https://github.com/secret1601/harim" target="_blank">Git</a></li>
+                      <li><a href="https://www.harim.com/main/" target="_blank">Origin</a></li>
+                    </ul>
+                  </div>  
                 </div>
-                <div class="port-info">
-                  <div class="port-info-title">
-                    <span>하림</span>
-                  </div>
-                  <ul class="port-info-list clearfix">
-                    <li><a href="#" target="_blank">HTML</a></li>
-                    <li><a href="https://secret1601.github.io/harim/" target="_blank">Git</a></li>
-                    <li><a href="https://www.harim.com/main/" target="_blank">Origin</a></li>
-                  </ul>
-                </div>  
               </div>
             </div>
 
@@ -579,8 +616,8 @@
                       <span>풀무원녹즙</span>
                     </div>
                     <ul class="port-info-list clearfix">
-                      <li><a href="#" target="_blank">HTML</a></li>
-                      <li><a href="https://secret1601.github.io/greenjuice/" target="_blank">Git</a></li>
+                      <li><a href="https://secret1601.github.io/greenjuice/" target="_blank">Work</a></li>
+                      <li><a href="https://github.com/secret1601/greenjuice" target="_blank">Git</a></li>
                       <li><a href="https://greenjuice.pulmuone.com/" target="_blank">Origin</a></li>
                     </ul>
                   </div>
@@ -591,14 +628,14 @@
             <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design">
               <div class="portfolio-item">
                 <div class="shot-item">
-                  <img src="images/pnuh.png" alt="부산대학교병원" />  
+                  <img src="images/ccs-busan1.png" alt="부산대학교병원" />  
                   <div class="port-info">
                     <div class="port-info-title">
                       <span>부산대학교병원</span>
                     </div>
                     <ul class="port-info-list clearfix">
-                      <li><a href="#" target="_blank">HTML</a></li>
-                      <li><a href="https://secret1601.github.io/pnuh/" target="_blank">Git</a></li>
+                      <li><a href="https://secret1601.github.io/pnuh/" target="_blank">Work</a></li>
+                      <li><a href="https://github.com/secret1601/pnuh" target="_blank">Git</a></li>
                       <li><a href="https://www.pnuh.or.kr/pnuh/main/main.do?rbsIdx=1" target="_blank">Origin</a></li>
                     </ul>
                   </div>
@@ -615,8 +652,8 @@
                       <span>STX 건설</span>
                     </div>
                     <ul class="port-info-list clearfix">
-                      <li><a href="#" target="_blank">HTML</a></li>
-                      <li><a href="https://secret1601.github.io/stxconst/" target="_blank">Git</a></li>
+                      <li><a href="https://secret1601.github.io/stxconst/" target="_blank">Work</a></li>
+                      <li><a href="https://github.com/secret1601/stxconst" target="_blank">Git</a></li>
                       <li><a href="http://www.stxconst.co.kr/" target="_blank">Origin</a></li>
                     </ul>
                   </div>
@@ -860,7 +897,7 @@
         <div class="section-header">          
           <h2 class="section-title">LIFE</h2>
           <hr class="lines">
-          <p class="section-subtitle">The Most Important Hobby Of My Life</p>
+          <p style="color: #000;" class="section-subtitle">The Most Important Hobby Of My Life</p>
         </div>
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">
