@@ -949,7 +949,7 @@ button:focus {
 
 .item-boxes h4 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: bold !important;
   margin-bottom: 10px;
   color: #62d291;
 }
@@ -1032,7 +1032,7 @@ button:focus {
 }
 
 #features .box-item .text p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 26px;
 }
 .low-green-bar {
@@ -1223,6 +1223,8 @@ button:focus {
 } */
 
 /* port-info*/
+
+
 .port-info {
   position: absolute;
   left: 50%;
@@ -1244,6 +1246,11 @@ button:focus {
 
   /* z-index: 999; */
   transition: all 0.3s;
+}
+.port-info-vue {
+  background: conic-gradient(from 45deg, #d5d5d5, #eceeee) !important;
+}
+.port-info-ccp {background: conic-gradient(from 45deg, #ffd301, #fffca6);
 }
 
 .portfolio-item:hover .port-info {
@@ -1439,7 +1446,8 @@ button:focus {
 11. Testimonial Section Style
  ========================================================================== */
 #testimonial {
-  background: url(../img/testimonial-bg.jpg) fixed no-repeat;
+  background-color: #343a40;
+  /* background: url(../img/testimonial-bg.jpg) fixed no-repeat; */
   background-size: cover;
   color: #fff;
   overflow: hidden;
@@ -1468,9 +1476,16 @@ button:focus {
   color: #999;
 }
 
+.testimonial-item .testimonial-text span i {
+  color:#000;
+  background: conic-gradient(from 45deg, rgb(171, 248, 226), rgb(6, 241, 154));
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
 .testimonial-item .testimonial-text p {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 17px;
+  font-weight: 700;
   padding: 36px 10px 30px 10px;
   margin: 0;
   line-height: 30px;
@@ -1481,7 +1496,7 @@ button:focus {
 }
 
 .owl-theme .owl-controls {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 /* ==========================================================================
