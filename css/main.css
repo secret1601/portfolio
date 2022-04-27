@@ -1250,7 +1250,8 @@ button:focus {
 .port-info-vue {
   background: conic-gradient(from 45deg, #d5d5d5, #eceeee) !important;
 }
-.port-info-ccp {background: conic-gradient(from 45deg, #ffd301, #fffca6);
+.port-info-ccp {
+  background: conic-gradient(from 45deg, #ffd301, #fffca6);
 }
 
 .portfolio-item:hover .port-info {
