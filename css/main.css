@@ -755,7 +755,7 @@ button:focus {
 /* 이미지 사이즈 */
 .navbar-brand img {
   width: 40px;
-  margin-top: 10px;
+  margin-top: 16px;
 }
 
 @media all and (max-width: 1199px) {
@@ -908,7 +908,51 @@ button:focus {
 /* ==========================================================================
   5. Services section
    ========================================================================== */
-.item-boxes {
+
+  .about-img-wrap {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
+  .about-img-list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-1 {
+    position: relative;
+  }
+  .about-1 img {
+    width: 300px;
+  }
+  .about-2 {
+    position: relative;
+  }
+  .about-2 img {
+    /* width: 400px; */
+    height: 400px;
+  }
+  .about-3 {
+    position: relative;
+  }
+  .about-3 img {
+    width: 300px;
+  }
+
+  .about-4 {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  .about-4 img {
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+  }
+
+
+  .item-boxes {
   text-align: center;
   padding: 20px 15px;
   margin-bottom: 15px;
@@ -916,6 +960,7 @@ button:focus {
   -moz-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin-bottom: 50px;
 }
 
 .item-boxes:nth-child(1) {
@@ -970,9 +1015,12 @@ button:focus {
   6. Features Section Style
    ========================================================================== */
 #features {
-  background: url(../img/bg1.jpg) fixed no-repeat;
+  /* background: url('../images/background-2.jpg') fixed no-repeat; */
+  background: #f0efef;
   background-size: cover;
   color: #fff;
+  
+  font-weight: bold;
   overflow: hidden;
   position: relative;
 }
@@ -1024,16 +1072,19 @@ button:focus {
 }
 
 #features .box-item .text h4 {
-  color: #61D2B4;
-  font-weight: 700;
-  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  font-size: 22px;
   text-transform: uppercase;
   line-height: 22px;
+  font-family: Mitr, YUniverse-B, Poppins, sans-serif !important;
+  padding-bottom: 10px;
 }
 
 #features .box-item .text p {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 26px;
+  color: #404040;
 }
 .low-green-bar {
   position: relative;
@@ -1178,7 +1229,9 @@ button:focus {
 
 .shot-item img {
   width: 100%;
-  border-radius: 30px !important;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  /* border-radius: 30px !important; */
   filter: brightness(40%);
   transition: 0.5s;
 }
@@ -1411,7 +1464,8 @@ button:focus {
   10. Counter Section Style
  ========================================================================== */
 .counters {
-  background: url(../img/counter.jpg) fixed;
+  background: url('../images/background-1.jpg') fixed no-repeat;
+  background-size: cover;
   position: relative;
 }
 
