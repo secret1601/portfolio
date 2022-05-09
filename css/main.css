@@ -1005,6 +1005,31 @@ button:focus {
   margin-top: 10px;
 }
 
+@media all and (max-width:1199px) {
+  .about-img-wrap {
+    display: none !important;
+  }
+}
+
+@media all and (max-width:992px) {
+  .about-img-wrap {
+    position: relative;
+    display: block;
+    width: 95%;
+  }
+  .about-1 img {
+    width: 170px;
+  }
+  .about-2 img {
+    height: 270px;
+  }
+  .about-3 img {
+    width: 170px;
+    height: 226px;
+  }
+}
+
+
 
 .item-boxes {
   text-align: center;
@@ -1623,6 +1648,12 @@ button:focus {
   display: inline-block;
   color: #fff;
   font-weight: bold;
+}
+
+
+@media all and (max-width:767px) {
+  .counters {
+    }
 }
 
 /* ==========================================================================
