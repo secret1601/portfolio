@@ -4,13 +4,13 @@
 (function($) {
 
   // 포트폴리오 메뉴
-  $(window).on('scroll', function() {
-    if ($(window).scrollTop() > 400) {
-        $('.port-side-wrap').fadeIn();
-    } else {
-        $('.port-side-wrap').fadeOut();
-    }
-  });
+  // $(window).on('scroll', function() {
+  //   if ($(window).scrollTop() > 400) {
+  //       $('.port-side-wrap').fadeIn();
+  //   } else {
+  //       $('.port-side-wrap').fadeOut();
+  //   }
+  // });
 
   // 폰 박스
   let phone_open = $('.phone-open');
@@ -156,8 +156,10 @@
     $(window).scroll(function() {
       if ($(this).scrollTop() > offset) {
         $('.back-to-top').fadeIn();
+        $('.port-side-wrap').fadeIn();
       } else {
         $('.back-to-top').fadeOut();
+        $('.port-side-wrap').fadeOut();
       }
     });
 
