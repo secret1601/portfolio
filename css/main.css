@@ -993,13 +993,13 @@ button:focus {
 
   .slicknav_nav a:hover,
   .slicknav_nav .active {
-    color: #61D2B4;
+    /* color: #61D2B4; */
     background: #f8f9fa;
   }
 
   .slicknav_nav .dropdown li a.active {
     background: #f8f9fa;
-    color: #61D2B4;
+    /* color: #61D2B4; */
   }
 }
 
@@ -1080,7 +1080,9 @@ button:focus {
   }
 }
 
-
+#services {
+  background-color: rgba(185, 184, 184, 0.1);
+}
 
 .item-boxes {
   text-align: center;
@@ -1100,7 +1102,7 @@ button:focus {
 .item-boxes:nth-child(1):hover {
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
-  box-shadow: rgba(237, 158, 12, 0.25) 0px 14px 28px, rgba(239, 138, 5, 0.22) 0px 10px 10px;
+  box-shadow: #b59e7b 0px 14px 28px, #b59e7b 0px 10px 10px;
 }
 
 .item-boxes .icon {
