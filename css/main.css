@@ -678,6 +678,104 @@ button:focus {
   padding-bottom: 550px;
 }
 
+/* ================================================= */
+/* sns-box */
+.contact-modal-wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  width: 1690px;
+  height: 1000px;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  
+}
+.contact-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 600px;
+  height: 400px;
+  background-color: #fff;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border: 5px solid #b59e7b;
+  z-index: 99999;
+}
+
+.contact-box h4 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sns-box {
+  position: absolute;
+  left: 23%;
+  top: 62%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.sns-box li {
+  position: relative;
+  display: inline-block;
+  font-size: 35px;
+  padding-top: 20px;
+  margin: 0 20px;
+}
+
+.sns-box li a {
+  color: #b59e7b;
+}
+
+.sns-box li:nth-child(1):hover a {
+  color: #ce615a !important;
+}
+
+.sns-box li:nth-child(2):hover a {
+  color: #3097c7;
+}
+
+.sns-box li:nth-child(3):hover a {
+  color: #e2cc05;
+}
+
+.sns-box li:nth-child(4):hover a {
+  color: #81dd9c;
+}
+
+.modal-close {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  display: block;
+  border: 2px solid #b59e7b;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 2px 4px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.modal-close:hover {
+  background-color: #b59e7b;
+  color: #fff;
+  border: 4px solid #f0d6b2;
+}
+
+
+@media all and (max-width: 991px) {
+  .sns-box li {
+    font-size: 35px;
+  }
+}
+
+/* ================================================= */
+
 #hero-area .overlay {
   position: absolute;
   width: 100%;
@@ -766,53 +864,6 @@ button:focus {
   color: #000 !important;
   font-weight: bold !important;
 }
-
-/* ================================================= */
-/* sns-box */
-.sns-box {
-  position: relative;
-  display: block;
-  text-align: center;
-}
-
-.sns-box li {
-  position: relative;
-  display: inline-block;
-  font-size: 35px;
-  padding-top: 20px;
-  margin: 0 20px;
-}
-
-.sns-box li a {
-  color: #333132;
-}
-
-.sns-box li:nth-child(1):hover a {
-  color: #ce615a !important;
-}
-
-.sns-box li:nth-child(2):hover a {
-  color: #3097c7;
-}
-
-.sns-box li:nth-child(3):hover a {
-  color: #e2cc05;
-}
-
-.sns-box li:nth-child(4):hover a {
-  color: #81dd9c;
-}
-
-
-@media all and (max-width: 991px) {
-  .sns-box li {
-    font-size: 35px;
-  }
-}
-
-/* ================================================= */
-
-
 
 #hero-area .banner_bottom_btn {
   margin-top: 40px;
@@ -1011,6 +1062,7 @@ button:focus {
   position: relative;
   display: block;
   width: 100%;
+  margin-top: 30px;
 }
 
 .about-img-list {
@@ -1024,7 +1076,8 @@ button:focus {
 }
 
 .about-1 img {
-  width: 300px;
+  height: 420px;
+  margin-top: 270px;
 }
 
 .about-2 {
@@ -1032,8 +1085,7 @@ button:focus {
 }
 
 .about-2 img {
-  /* width: 400px; */
-  height: 400px;
+  width: 400px;
 }
 
 .about-3 {
@@ -1041,7 +1093,8 @@ button:focus {
 }
 
 .about-3 img {
-  width: 300px;
+  width: 350px;
+  margin-top: 200px;
 }
 
 .about-4 {
@@ -1206,11 +1259,10 @@ button:focus {
 
 #features .box-item .text h4 {
   color: #000;
-  font-weight: bold;
+  font-weight: bold !important;
   font-size: 24px;
   text-transform: uppercase;
   line-height: 22px;
-  font-family: Mitr, YUniverse-B, Poppins, sans-serif !important;
   padding-bottom: 10px;
 }
 

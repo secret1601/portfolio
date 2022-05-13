@@ -12,6 +12,20 @@
   //   }
   // });
 
+  // contact 모달창
+  let modal_open = $('.modal-open');
+  let contact_modal_wrap = $('.contact-modal-wrap');
+  let modal_close = $('.modal-close');
+
+  modal_open.click(function(e){
+    e.preventDefault();
+    contact_modal_wrap.stop().fadeIn(300);
+  });
+  modal_close.click(function(e){
+    e.preventDefault();
+    contact_modal_wrap.stop().fadeOut(300);
+  })
+
   // 폰 박스
   let phone_open = $('.phone-open');
   let phone_box_wrap = $('.phone-box-wrap');
