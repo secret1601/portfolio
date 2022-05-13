@@ -34,6 +34,34 @@
 @charset "utf-8";
 
 @font-face {
+  font-family: 'S-CoreDream-9Black';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-4Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-2ExtraLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-7ExtraBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: tway sky;
   src: url('./tway_sky.ttf') format('woff');
   font-weight: normal;
@@ -232,12 +260,13 @@ a:not([href]):not([tabindex]) {
 }
 
 .section-header .section-title {
-  font-size: 42px;
+  font-size: 37px;
   margin-top: 0;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   color: #333;
   position: relative;
+  font-family: 'S-CoreDream-9Black', sans-serif;
 }
 
 .section-header .section-title span {
@@ -245,13 +274,13 @@ a:not([href]):not([tabindex]) {
 }
 
 .section-header .section-subtitle {
+  display: inline-block;
   margin-top: 15px;
   color: rgb(0, 0, 0);
   font-size: 20px;
   z-index: 9 !important;
   /* background-color: #ffe958; */
-  font-family: 'MinSans-Medium';
-  display: inline-block;
+  font-family: 'S-CoreDream-7ExtraBold', sans-serif;
 }
 
 /* yellow-bar  */
@@ -708,6 +737,7 @@ button:focus {
   text-align: center;
   margin-top: 20px;
   /* color: #b59e7b; */
+  font-family: 'S-CoreDream-7ExtraBold';
 }
 
 .contact-box > span {
@@ -716,7 +746,7 @@ button:focus {
   text-align: center;
   font-size: 15px;
   color: #404040;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .contact-box p {
@@ -960,14 +990,6 @@ button:focus {
   margin-bottom: 0px !important;
 }
 
-.top-nav-collapse .navbar-nav .nav-link:hover {
-  /* color: #61D2B4 !important; */
-}
-
-.top-nav-collapse .navbar-nav .nav-link.active {
-  /* color: #fff !important; */
-}
-
 .indigo {
   background: transparent;
 }
@@ -983,7 +1005,8 @@ button:focus {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  font-size: 12px;
+  font-size: 10px;
+  font-family: 'S-CoreDream-9Black', sans-serif;
 }
 
 .navbar-expand-lg .navbar-nav li a:hover,
@@ -1194,15 +1217,16 @@ button:focus {
 }
 
 .item-boxes h4 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold !important;
   margin-bottom: 10px;
   color: #b59e7b;
+  font-family: 'S-CoreDream-9Black', sans-serif;
 }
 
 .item-boxes p {
-  font-size: 20px;
-  /* font-family: 'MinSans-Medium'; */
+  font-size: 17px;
+  font-family: 'S-CoreDream-9Black', sans-serif;
 }
 
 .item-boxes:hover .icon {
@@ -1275,11 +1299,11 @@ button:focus {
 
 #features .box-item .text h4 {
   color: #000;
-  font-weight: bold !important;
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase;
   line-height: 22px;
   padding-bottom: 10px;
+  font-family: 'S-CoreDream-9Black', sans-serif;
 }
 
 #features .box-item .text p {
@@ -1318,7 +1342,7 @@ button:focus {
   7. Video promo Style
    ========================================================================== */
 .video-promo {
-  background: #333;
+  background: rgb(73, 72, 72);
   color: #fff;
   overflow: hidden;
   position: relative;
@@ -1330,8 +1354,9 @@ button:focus {
 
 .video-promo .video-promo-content h2 {
   color: #fff;
-  font-size: 40px;
+  font-size: 35px;
   text-transform: uppercase;
+  font-family: 'S-CoreDream-9Black', sans-serif;
   margin-bottom: 40px;
 }
 
@@ -1346,7 +1371,7 @@ button:focus {
   color: #b59e7b;
   font-size: 17px;
   line-height: 30px;
-  font-family: tway sky;
+  font-family: 'S-CoreDream-9Black', sans-serif;
 }
 
 .video-promo .video-promo-content .video-popup {
@@ -1852,12 +1877,13 @@ button:focus {
 }
 
 .testimonial-item .testimonial-text p {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 100 !important;
   padding: 36px 10px 30px 10px;
   margin: 0;
   line-height: 30px;
   text-align: left;
+  font-family: 'S-CoreDream-4Regular', sans-serif;
 }
 
 .owl-theme .owl-controls .owl-page span {
@@ -2027,7 +2053,7 @@ button:focus {
 }
 
 #blog .blog-item-text h3 a {
-  color: #333;
+  color: #b59e7b;
   font-family: tway sky;
   font-weight: bold;
 }
@@ -2035,8 +2061,9 @@ button:focus {
 #blog .blog-item-text p {
   line-height: 25px;
   margin-bottom: 20px;
-  font-size: 17px;
-  font-family: 'LAB디지털';
+  font-size: 14px;
+  /* font-family: 'LAB디지털'; */
+  font-family: 'S-CoreDream-9Black', sans-serif;
 }
 
 .meta-tags {
