@@ -168,6 +168,10 @@ a:not([href]):not([tabindex]) {
   color: #b59e7b;
 }
 
+.mt-20 {
+  padding-top: 20px;
+}
+
 /* 폰 박스 */
 .phone-box-wrap {
   position: fixed;
@@ -1760,6 +1764,7 @@ button:focus {
 .table-left {
   margin-top: 20px;
 }
+
 
 /* ==========================================================================
   10. Counter Section Style
