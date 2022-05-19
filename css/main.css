@@ -1623,7 +1623,7 @@ button:focus {
   padding: 5px;
   margin-top: 15px;
   /* background-color: #33b39100; */
-  font-family: 'S-CoreDream-7ExtraBold' !important;
+  font-family: 'S-CoreDream-7ExtraBold';
 }
 
 .port-info-title span {
@@ -1631,7 +1631,6 @@ button:focus {
   display: block;
   color: #fff;
   font-weight: bold;
-  /* font-family: tway sky; */
 }
 
 .port-info-list {
