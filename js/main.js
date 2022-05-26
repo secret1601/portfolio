@@ -1,17 +1,4 @@
-
-
-
 (function($) {
-
-  // 포트폴리오 메뉴
-  // $(window).on('scroll', function() {
-  //   if ($(window).scrollTop() > 400) {
-  //       $('.port-side-wrap').fadeIn();
-  //   } else {
-  //       $('.port-side-wrap').fadeOut();
-  //   }
-  // });
-
   // contact 모달창
   let modal_open = $('.modal-open');
   let contact_modal_wrap = $('.contact-modal-wrap');
@@ -39,8 +26,6 @@
     phone_box_wrap.stop().fadeOut(700);
   });
 
-
-  
   "use strict";
 
   // Sticky Nav
@@ -87,7 +72,6 @@
       duplicate: false,
       label: '',
     });
-
 
 /* 
    CounterUp
@@ -201,7 +185,9 @@
     responsive: true
   });
 
+  
 /* 
+
    Page Loader
    ========================================================================== */
   $('#loader').fadeOut();
